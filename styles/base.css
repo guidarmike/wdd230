@@ -120,3 +120,7 @@ footer {
     padding-left: 240px;
     padding-right: 240px;
 }
+
+#lastModified {
+    color: yellow;
+}
