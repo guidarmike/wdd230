@@ -10,6 +10,9 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
 
 body {
@@ -54,13 +57,14 @@ h2 {
 }
 
 main h2 {
-    border-bottom: 2px solid rgb(185, 180, 180); 
+    border-bottom: 2px solid rgb(185, 180, 180);
+    display: block;
+    margin-bottom: 20px;
 }
 
 
 .card {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: block;
     margin: 10px;
     border: 1px solid black;
     padding-bottom: 10px;
@@ -125,22 +129,22 @@ footer {
 
 @media (max-width: 768px) {
     header {
-        padding-left: 10%;  
-        padding-right: 10%; 
+        padding-left: 10%;
+        padding-right: 10%;
     }
 
     nav ul {
-        padding-left: 224px;  
-        padding-right: 224px; 
+        padding-left: 224px;
+        padding-right: 224px;
     }
 
     main {
         padding-left: 8px;
         padding-right: 8px;
     }
-    
+
     footer {
-        padding-left: 20%;  
-        padding-right: 20%; 
+        padding-left: 20%;
+        padding-right: 20%;
     }
 }
