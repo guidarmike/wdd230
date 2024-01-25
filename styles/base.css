@@ -48,6 +48,11 @@ h2 {
     text-align: center;
 }
 
+h2::after {
+    content: '\1F4BB';
+    font-size: 25px;
+}
+
 h2 {
     border-bottom: 2px solid rgb(185, 180, 180);
     display: block;
@@ -73,6 +78,18 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+}
+
+.card h3[data-type="activities"]::after {
+    content: '\1F6E0';
+    font-size: 20px;
+    padding-left: 5%;
+}
+
+.card h3[data-type="information"]:after {
+    content: '\1F4D4';
+    font-size: 20px;
+    padding-left: 5%;
 }
 
 .card p {
