@@ -221,6 +221,9 @@ footer {
 
     .map-container {
         max-width: 600px;
+        margin: 0 auto;
+        padding: 0;
+        padding-bottom: 5%;
     }
 
     footer {
