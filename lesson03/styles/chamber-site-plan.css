@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Alice&display=swap');
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -21,17 +23,44 @@ body {
     text-align: center;
 }
 
-h1, h2, h3 {
-    font-family: 'Arial Black', Arial, sans-serif;
+h1,
+h2,
+h3 {
+    font-family: 'Alex Brush', Arial, sans-serif;
 }
 
 p {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Alice', Helvetica, Arial, sans-serif;
 }
+
+.heading-font{
+    font-family: 'Alex Brush', cursive;
+    font-size: 25px;
+    color: #0d4074;
+}
+
+.body-font {
+    font-family: 'Alice', serif;
+    font-size: 25px;
+    color: #0d4074;
+}
+
+.primary-color {
+    background-color: #26830f;
+    color: #fff;
+    padding: 3px;
+}
+
+.accent-color {
+    background-color: #58b341;
+    color: #fff;
+    padding: 3px;
+}
+
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     padding: 20px;
 }
