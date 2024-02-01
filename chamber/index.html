@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sabina Valley - Chamber of Commerce</title>
     <meta name="description"
         content="WDD 230 - Web Frontend Development, Michele Guidara, This page purpose is to be a Chamber of Commerce page">
     <meta name="author" content="Michele Guidara">
@@ -26,8 +26,8 @@
         <img src="images/main_chamber.jpg" class="main-image" alt="Sabina Chamber of Commerce Logo Image">
         <h1>Sabina Valley Chamber of Commerce</h1>
         <section class="header-buttons">
-            <button class="log-in">Log In</button>
-            <button class="sign-up">Sign Up</button>
+            <a href="#" class="join-link" id="log-in">Log In</a>
+            <a href="#" class="join-link" id="sign-up">Sign Up</a>
         </section>
     </header>
 
@@ -43,13 +43,16 @@
 
     <main>
         <section class="hero">
-            <img src="images/rsz_hero_image.jpg" alt="Sabina Lazio Chamber of Commerce">
-            <div class="hero-content">
-                <p>
-                    Welcome to Sabina Lazio Chamber of Commerce. Discover the rich heritage of olive oil companies in
-                    the region.
-                </p>
-                <a href="#" class="join-link">Join the Chamber</a>
+            <div class="hero-card">
+                <img src="images/rsz_hero_image.jpg" alt="Sabina Lazio Chamber of Commerce">
+                <div class="hero-content">
+                    <p>
+                        Welcome to Sabina Lazio Chamber of Commerce. Discover the rich heritage of olive oil companies
+                        in
+                        the region.
+                    </p>
+                    <a href="#" class="join-link">Join the Chamber</a>
+                </div>
             </div>
         </section>
 
@@ -58,10 +61,14 @@
             <!-- Current events slider or carousel -->
             <div class="current-events">
                 <!-- Current events content goes here -->
+                <h2>Current Events</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <!-- Weather card section -->
             <div class="weather-card">
                 <!-- Weather card content goes here -->
+                <h2>Weather Forecast</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
         </section>
 
@@ -83,8 +90,17 @@
     </main>
 
     <footer>
-
+        <p>
+            &copy; <span id="currentYear"></span> <br>
+            Michele Guidara <br>
+            Project for WDD230
+        </p>
+        <p id="lastModified"></p>
     </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/cardslides.js"></script>
 
 </body>
 
