@@ -1,15 +1,30 @@
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1000px) {
+    h1 {
+        margin-right: auto;
+    }
+
+    main {
+        margin: 0 auto;
+    }
+
+    .hero, .events-weather {
+        width: 100%;
+        margin: 0 auto;
+    }
+
     .hero-card {
-        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .current-events,
-    .weather-card {
-        width: 90%; 
+    .hero-card img {
+        max-width: 100%;
+        margin-bottom: 20px;
     }
 
-    .company-spotlights {
-        justify-content: space-around;
+    .hero-content p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
     }
-
 }

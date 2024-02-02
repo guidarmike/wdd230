@@ -1,4 +1,11 @@
 @media screen and (max-width: 480px) {
+    .header-buttons {
+        display: none;
+    }
+
+    h1 {
+        margin-right: auto;
+    }
 
     nav {
         width: 100%;
@@ -20,22 +27,31 @@
     .show-menu {
         display: flex;
     }
-    
+
+    main {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .hero, .events-weather {
+        width: 100%;
+        margin: 0 auto;
+    }
+
     .hero-card {
-        width: 90%; 
-    }
-
-    .current-events,
-    .weather-card {
-        width: 95%;
-    }
-
-    .company-spotlights {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .spotlight {
-        width: 90%; 
+    .hero-card img {
+        max-width: 100%;
+        margin-bottom: 20px;
     }
+
+    .hero-content p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+
 }
