@@ -21,6 +21,21 @@ body {
     color: #000000;
 }
 
+#mode {
+	position: absolute;
+	top: 0;
+	right: 1rem;
+	font-size: 1rem;
+	cursor: pointer;
+	font-size: 1.5rem;
+}
+
+.dark-mode {
+	background-color: #000;
+	color: #fff;
+	border-color: #eee; 
+}
+
 .header-container {
     display: flex; 
     justify-content: space-between; 
