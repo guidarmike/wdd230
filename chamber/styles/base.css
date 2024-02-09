@@ -213,7 +213,8 @@ main {
 }
 
 .dark-mode .current-events h2,
-.dark-mode .weather-card h2 {
+.dark-mode .weather-card h2,
+.dark-mode .spotlight h2 {
     color: #fff;
 }
 
