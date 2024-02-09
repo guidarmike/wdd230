@@ -22,25 +22,25 @@ body {
 }
 
 #mode {
-	position: absolute;
-	top: 0;
-	right: 1rem;
-	font-size: 1rem;
-	cursor: pointer;
-	font-size: 1.5rem;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
 }
 
 .dark-mode {
-	background-color: #000;
-	color: #fff;
-	border-color: #eee; 
+    background-color: #000;
+    color: #fff;
+    border-color: #eee;
 }
 
 .header-container {
-    display: flex; 
-    justify-content: space-between; 
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px 20px; 
+    padding: 10px 20px;
 }
 
 header {
@@ -66,7 +66,7 @@ header {
 }
 
 nav {
-    background-color: #58b341; 
+    background-color: #58b341;
     color: #fff;
     display: flex;
     justify-content: flex-start;
@@ -149,14 +149,14 @@ main {
 .join-link {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #58b341; 
+    background-color: #58b341;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
 }
 
 .join-link:hover {
-    background-color: #26830f; 
+    background-color: #26830f;
 }
 
 .events-weather {
@@ -203,6 +203,27 @@ main {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.74);
+}
+
+.dark-mode .hero-card,
+.dark-mode .current-events,
+.dark-mode .weather-card,
+.dark-mode .spotlight {
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.74);
+}
+
+.dark-mode .current-events h2,
+.dark-mode .weather-card h2 {
+    color: #fff;
+}
+
+.dark-mode .hero-card p,
+.dark-mode .current-events p,
+.dark-mode .weather-card p,
+.dark-mode .spotlight p {
+    color: #fff;
 }
 
 footer {
