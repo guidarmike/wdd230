@@ -7,7 +7,7 @@ const scriptureList = ["2 Nephi 31", "Helaman 12", "Alma 5", "Moroni 10"];
 let lastWeekFavorite = '';
 
 button.addEventListener('click', () => {
-    if (input.value !== '') {
+    if (input.value.trim() !== '') {
         const li = document.createElement('li');
         const deleteButton = document.createElement('button');
         
