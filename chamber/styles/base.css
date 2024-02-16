@@ -64,7 +64,8 @@ header {
 }
 
 nav {
-    background-color: #58b341;
+    background-color: #1b600a;
+    /* background-color: #58b341; */
     color: #fff;
     display: flex;
     justify-content: flex-start;
@@ -147,7 +148,8 @@ main {
 .join-link {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #58b341;
+    background-color: #1b600a;
+    /* background-color: #58b341; */
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -226,7 +228,8 @@ main {
 }
 
 footer {
-    background-color: #58b341;
+    background-color: #26830f;
+    /* background-color: #58b341; */
     width: 100%;
     text-align: center;
     margin: 0 auto;
