@@ -25,7 +25,7 @@
 <body>
 
     <header class="header-container">
-        <img src="images/main_chamber.jpg" class="main-image" alt="Sabina Chamber of Commerce Logo Image">
+        <img src="images/main_chamber.webp" class="main-image" alt="Sabina Chamber of Commerce Logo Image">
         <h1>Sabina Valley Chamber of Commerce</h1>
 
         <div id="mode">
@@ -53,12 +53,16 @@
     <main>
         <section class="hero">
             <div class="hero-card">
-                <img src="images/rsz_hero_image.jpg" alt="Sabina Lazio Chamber of Commerce">
+                <picture>
+                    <source srcset="images/wdd230-org-small.webp" media="(max-width: 400px)">
+                    <source srcset="images/wdd230-org-medium.webp" media="(max-width: 960px)">
+                    <img src="images/wdd230-org-large.webp" alt="Sabina Lazio Chamber of Commerce">
+                </picture>
+
                 <div class="hero-content">
                     <p>
                         Welcome to Sabina Lazio Chamber of Commerce. Discover the rich heritage of olive oil companies
-                        in
-                        the region.
+                        in the region.
                     </p>
                     <a href="#" class="join-link">Join the Chamber</a>
                 </div>
@@ -115,7 +119,7 @@
 
     <footer>
         <p>
-            Phone:+(111)0230-4583  <br>    
+            Phone:+(111)0230-4583 <br>
             Email:info@sabina.it
         </p>
         <p>
