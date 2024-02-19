@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load</title>
+
+    <meta name="description"
+        content="WDD 230 - Web Frontend Development, Michele Guidara, This page purpose is to be a course assignment portal">
+    <meta name="author" content="Michele Guidara">
+
+    <link type="text/css" rel="stylesheet" href="styles/lazyload.css">
+
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="WDD230 - Lazy Load by Michele Guidara">
+    <meta property="og:type" content="Website">
+    <meta property="og:url" content="https://guidarmike.github.io/wdd230/">
+    <meta property="og:image" content="https://www.turismoroma.it/sites/default/files/colosseo_slide_0.jpg">
+</head>
+
+<body>
+    <header>
+        <h1>Lazy Images</h1>
+    </header>
+
+    <main>
+        <div class="image-container">
+            <picture>
+                <source srcset="http://placekitten.com/400/600" type="image/jpeg">
+                <img src="http://placekitten.com/400/600" loading="lazy" alt="Image 1" width="400" height="600">
+            </picture>
+            <picture>
+                <source srcset="https://placebear.com/400/600" type="image/jpeg">
+                <img src="https://placebear.com/400/600" loading="lazy" alt="Image 2" width="400" height="600">
+            </picture>
+            <picture>
+                <source srcset="http://placekitten.com/400/600" type="image/jpeg">
+                <img src="http://placekitten.com/400/600" loading="lazy" alt="Image 3" width="400" height="600">
+            </picture>
+            <picture>
+                <source srcset="https://placebear.com/400/600" type="image/jpeg">
+                <img src="https://placebear.com/400/600" loading="lazy" alt="Image 4" width="400" height="600">
+            </picture>
+            <picture>
+                <source srcset="http://placekitten.com/400/600" type="image/jpeg">
+                <img src="http://placekitten.com/400/600" loading="lazy" alt="Image 5" width="400" height="600">
+            </picture>
+            <picture>
+                <source srcset="https://placebear.com/400/600" type="image/jpeg">
+                <img src="https://placebear.com/400/600" loading="lazy" alt="Image 6" width="400" height="600">
+            </picture>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentYear"></span> <br>
+            Michele Guidara <br>
+            Italy
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+</body>
+
+</html>
