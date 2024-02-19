@@ -22,11 +22,30 @@ button.addEventListener('click', () => {
         });
         
         input.value = '';
+
+        input.focus();
+        flashCursor(input, 3, 500)
+
     } else {
         input.focus();
     }
 });
 
+function flashCursor(inputElement, flashes, delay) {
+    let count = 0;
+    const intervalId = setInterval(() => {
+        if (count % 2 === 0) {
+            inputElement.style.borderRight = '2px solid black';
+        } else {
+            inputElement.style.borderRight = 'none';
+        }
+        count++;
+        if (count >= flashes * 2) {
+            clearInterval(intervalId);
+            inputElement.style.borderRight = 'none';
+        }
+    }, delay);
+}
 //Added Feature
 function getRandomScripture() {
     const randomIndex = Math.floor(Math.random() * scriptureList.length);
