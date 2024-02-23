@@ -72,4 +72,17 @@
     .spotlight {
         margin-bottom: 20px;
     }
+
+    .sidebar-container {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar, .images-content {
+        grid-column: auto;
+    }
+
+    .discovery:hover {
+        opacity: 1;
+        transform: none;
+    }
 }

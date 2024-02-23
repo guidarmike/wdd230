@@ -141,7 +141,7 @@ main {
 .hero-content {
     flex: 1;
     padding: 0 20px;
-    
+
     box-sizing: border-box;
 }
 
@@ -210,10 +210,72 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.74);
 }
 
+.sidebar-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 20px;
+}
+
+.sidebar {
+    grid-column: 1;
+}
+
+.visit-message,
+.sabina-area,
+.discovery-events {
+    border: 1px solid #000000;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.74);
+}
+
+.sabina-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    padding-bottom: 10px;
+}
+
+.sabina-area img {
+    max-width: 100%; 
+    height: auto; 
+    transition: transform 0.3s ease; 
+    transform-origin: left;
+}
+
+.sabina-area img:hover {
+    transform: scale(5); 
+    z-index: 2; 
+}
+
+.images-content {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid #000000;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.74);
+}
+
+.images-content img {
+    max-width: 100%;
+    margin: 5px;
+}
+
 .dark-mode .hero-card,
 .dark-mode .current-events,
 .dark-mode .weather-card,
-.dark-mode .spotlight {
+.dark-mode .spotlight,
+.dark-mode .sabina-area,
+.dark-mode .visit-message,
+.dark-mode .discovery-events,
+.dark-mode .images-content {
     background-color: #000;
     color: #fff;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.74);
@@ -221,7 +283,8 @@ main {
 
 .dark-mode .current-events h2,
 .dark-mode .weather-card h2,
-.dark-mode .spotlight h2 {
+.dark-mode .spotlight h2,
+.dark-mode .sabina-area h2 {
     color: #fff;
 }
 
@@ -230,6 +293,25 @@ main {
 .dark-mode .weather-card p,
 .dark-mode .spotlight p {
     color: #fff;
+}
+
+.discovery {
+    animation: fadeIn 5s ease-in-out;
+}
+
+.discovery:hover {
+    opacity: 0.8;
+    transform: scale(1.02);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 footer {
