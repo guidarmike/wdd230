@@ -82,7 +82,7 @@ h2 {
     text-align: center;
 }
 
-h2::after {
+h2:not(.no-icon)::after {
     content: '\1F4BB';
     font-size: 25px;
 }
