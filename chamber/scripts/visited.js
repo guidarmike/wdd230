@@ -9,10 +9,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const millisecondsPerDay = 24 * 60 * 60 * 1000;
         const daysSinceLastVisit = Math.floor((currentDate - lastVisit) / millisecondsPerDay);
 
-        if (daysSinceLastVisit === 1) {
+        if (daysSinceLastVisit <= 1) {
             document.querySelector(".visit-message").textContent = "Back so soon! Awesome!";
         } else {
-            document.querySelector(".visit-message").textContent = `You last visited ${daysSinceLastVisit} day${daysSinceLastVisit === 1 ? '' : 's'} ago.`;
+            document.querySelector(".visit-message").textContent = `You last visited ${daysSinceLastVisit} day${daysSinceLastVisit <= 1 ? '' : 's'} ago.`;
         }
     }
 
