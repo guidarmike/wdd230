@@ -86,3 +86,12 @@ form button[type="submit"]:hover {
     font-size: 16px;
     margin-left: 5px;
 }
+
+.dark-mode .form-container label {
+    color: #000; 
+}
+
+.dark-mode .form-header .form-title {
+    color: #fff; 
+}
+

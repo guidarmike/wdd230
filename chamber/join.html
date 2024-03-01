@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michele Guidara - WDD 230 - Form</title>
+    <title>Michele Guidara - WDD 230 - Join Form</title>
     <meta name="description"
-        content="WDD 230 - Web Frontend Development, Michele Guidara, This page purpose is to be a course portal form">
+        content="WDD 230 - Web Frontend Development, Michele Guidara, This page purpose is to be a Chamber of Commerce join form">
     <meta name="author" content="Michele Guidara">
 
     <link type="text/css" rel="stylesheet" href="styles/normalize.css">
-    <link type="text/css" rel="stylesheet" href="styles/form.css">
     <link type="text/css" rel="stylesheet" href="styles/base.css">
     <link type="text/css" rel="stylesheet" href="styles/medium.css">
     <link type="text/css" rel="stylesheet" href="styles/larger.css">
+    <link type="text/css" rel="stylesheet" href="styles/form.css">
 
     <link rel="icon" href="lesson02/images/favicon.ico">
     <meta property="og:title" content="WDD230 - Form Page by Michele Guidara">
@@ -33,8 +33,8 @@
         </div>
 
         <section class="header-buttons">
-            <a href="#" class="join-link" id="log-in">Log In</a>
-            <a href="#" class="join-link" id="sign-up">Sign Up</a>
+            <a href="join.html" class="join-link" id="log-in">Log In</a>
+            <a href="join.html" class="join-link" id="sign-up">Sign Up</a>
 
             <div id="hamburger">&#8801;</div>
         </section>
@@ -55,39 +55,69 @@
         <div class="form-header">
             <h2 class="form-title">Join Form</h2>
         </div>
-
+        
         <div class="form-container">
             <form action="thankyou.html" method="get">
                 <div>
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required>
+                    <label for="first_name">First Name:</label>
+                    <input type="text" id="first_name" name="fname" required>
                 </div>
                 <div>
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}" required>
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" id="last_name" name="lname" required>
                 </div>
                 <div>
-                    <label for="confirm_password">Confirm Password:</label>
-                    <input type="password" id="confirm_password" name="confirm_password" required
-                        onblur="checkPassword(this)">
-                    <span id="password_message"></span>
+                    <label for="position">Title or Position:</label>
+                    <input type="text" id="position" name="tposition" required pattern="[a-zA-Z\s-]{7,}">
                 </div>
                 <div>
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
-                        title="Please enter a valid email address">
+                    <input type="email" id="email" name="email" required placeholder="example@example.com">
                 </div>
                 <div>
-                    <label for="rating">Page Rating:</label>
-                    <input type="range" id="rating" name="rating" min="1" max="10" step="1"
-                        oninput="updateRating(this)">
-                    <span id="rating_display">1</span>
+                    <label for="phone">Mobile Phone:</label>
+                    <input type="tel" id="phone" name="mphone" required>
+                </div>
+                <div>
+                    <label for="organization">Organization Name:</label>
+                    <input type="text" id="organization" name="orgname" required>
+                </div>
+                <div>
+                    <label for="membership">Membership Level:</label>
+                    <select id="membership" name="memlevel" required>
+                        <option value="NP">NP Membership (No Fee)</option>
+                        <option value="Bronze">Bronze Membership</option>
+                        <option value="Silver">Silver Membership</option>
+                        <option value="Gold">Gold Membership</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="description">Organization Description:</label>
+                    <textarea id="description" name="orgdescription"></textarea>
+                </div>
+                <div>
+                    <input type="hidden" id="form_load_time" name="form_load_time">
                 </div>
                 <div>
                     <button type="submit">Submit</button>
                 </div>
             </form>
         </div>
+        
+        <div class="membership-benefits">
+            <h3>Membership Benefits</h3>
+            <ul>
+                <li>NP Membership: No fee, basic benefits</li>
+                <li>Bronze Membership: Intermediate benefits</li>
+                <li>Silver Membership: Advanced benefits</li>
+                <li>Gold Membership: Premium benefits</li>
+            </ul>
+        </div>
+        
+        <script>
+            document.getElementById('form_load_time').value = Date.now();
+        </script>
+        
 
     </main>
 
@@ -107,7 +137,6 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburgermenu.js"></script>
     <script src="scripts/darkmode.js"></script>
-    <script src="scripts/form.js"></script>
 
 </body>
 
