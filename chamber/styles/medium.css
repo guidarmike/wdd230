@@ -85,4 +85,16 @@
         opacity: 1;
         transform: none;
     }
+
+
+    .form-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-container,
+    .membership-benefits {
+        width: 100%;
+    }
 }

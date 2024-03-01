@@ -1,3 +1,14 @@
+:root {
+    --heading-font: 'Alex Brush', Arial, sans-serif;
+    --paragraph-font: 'Alice', Helvetica, Arial, sans-serif;
+    --form-background: #f9f9f9;
+    --form-border: #ddd;
+    --form-padding: 20px;
+    --form-margin-bottom: 20px;
+    --primary-color: #26830f;
+    --primary-color-hover: #1b600a;
+}
+
 h1,
 h2,
 h3 {
@@ -322,6 +333,108 @@ main {
     100% {
         opacity: 1;
     }
+}
+
+.form-header {
+    grid-column: 1 / -1; 
+    text-align: center; 
+}
+
+.form-container {
+    grid-column: 1 / -1; 
+    display: flex;
+    justify-content: center;
+}
+
+.form-title {
+    margin-bottom: 20px; 
+}
+
+form {
+    background-color: var(--form-background);
+    border: 1px solid var(--form-border);
+    padding: var(--form-padding);
+    margin-bottom: var(--form-margin-bottom);
+    border-radius: 5px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="tel"],
+form input[type="email"],
+form input[type="hidden"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: var(--paragraph-font);
+    font-size: 16px;
+}
+
+form button[type="submit"] {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: var(--paragraph-font);
+    font-size: 16px;
+}
+
+form button[type="submit"]:hover {
+    background-color: var(--primary-color-hover);
+}
+
+#password_message {
+    color: red;
+    font-family: var(--paragraph-font);
+}
+
+#rating_display {
+    font-family: var(--paragraph-font);
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.dark-mode .form-container label {
+    color: #000; 
+}
+
+.dark-mode .form-header .form-title {
+    color: #fff; 
+}
+
+.form-container,
+.membership-benefits {
+    width: 100%;
+    max-width: 500px; 
+    margin: 0 auto; 
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+.form-container form div,
+.membership-benefits {
+    margin-bottom: 20px;
+}
+
+.form-container,
+.membership-benefits {
+    width: 50%;
+    float: left;
 }
 
 footer {
