@@ -57,7 +57,7 @@
         </div>
 
         <div class="form-container">
-            <form action="record.html" method="get">
+            <form action="thankyou.html" method="get">
                 <div>
                     <label for="username">Username:</label>
                     <input type="text" id="username" name="username" required>
@@ -69,7 +69,7 @@
                 <div>
                     <label for="confirm_password">Confirm Password:</label>
                     <input type="password" id="confirm_password" name="confirm_password" required
-                        oninput="checkPassword(this)">
+                        onblur="checkPassword(this)">
                     <span id="password_message"></span>
                 </div>
                 <div>
