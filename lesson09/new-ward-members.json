@@ -1,0 +1,35 @@
+{
+    "wardInformation": {
+    "familyName": "Vardeu",
+    "moveInDate": "1997-08-18",
+    "numberOfPeople": 5,
+    "visitedByBishopric": true,
+    "familyMembers": [
+      {
+        "name": "Dario Vardeu",
+        "gender": "Male",
+        "birthdate": "1968-07-04"
+      },
+      {
+        "name": "Alba Vardeu",
+        "gender": "Female",
+        "birthdate": "1972-10-21"
+      },
+      {
+        "name": "Miriam Vardeu",
+        "gender": "Female",
+        "birthdate": "2010-02-03"
+      },
+      {
+        "name": "Ylenia Vardeu",
+        "gender": "Female",
+        "birthdate": "2001-08-27"
+      },
+      {
+        "name": "Michael Vardeu",
+        "gender": "Male",
+        "birthdate": "2015-04-10"
+      }
+    ]
+    }
+  }
