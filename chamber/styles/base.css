@@ -437,6 +437,41 @@ form button[type="submit"]:hover {
     float: left;
 }
 
+.discovery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .members {
+    border: 1px solid #000;
+    padding: 20px 0;
+  }
+  
+  .members img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .dark-mode .discovery-container,
+  .dark-mode .members {
+    background-color: #000;
+    color: #fff;
+    border-color: #fff;
+  }
+  
+  .dark-mode .member h2,
+  .dark-mode .member p {
+    color: #fff;
+  }
+  
+  .dark-mode .member a {
+    color: var(--primary-color);
+  }
+
 footer {
     background-color: #26830f;
     /* background-color: #58b341; */
