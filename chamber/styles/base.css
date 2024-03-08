@@ -446,18 +446,19 @@ form button[type="submit"]:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
-  .members {
+  .member {
     border: 1px solid #000;
-    padding: 20px 0;
+    padding: 20px 10px;
+    margin: 5px;
   }
   
-  .members img {
+  .member img {
     max-width: 100%;
     height: auto;
   }
   
   .dark-mode .discovery-container,
-  .dark-mode .members {
+  .dark-mode .member {
     background-color: #000;
     color: #fff;
     border-color: #fff;
