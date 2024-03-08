@@ -17,7 +17,16 @@
         "image": "companyb.jpg",
         "membership_level": "Silver",
         "other_info": "Consectetur adipiscing elit"
-      }
+      },
+      {
+        "name": "Company C",
+        "address": "789 Oak Street",
+        "phone": "555-91011",
+        "website": "http://www.companyc.com",
+        "image": "companyc.jpg",
+        "membership_level": "Bronze",
+        "other_info": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+    }
     ]
-  }
+}
   

@@ -97,4 +97,31 @@
     .membership-benefits {
         width: 100%;
     }
+
+    .list-view .member {
+        display: block;
+        padding: 10px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #000;
+    }
+
+    .list-view .member h2,
+    .list-view .member p {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .list-view .member h2 {
+        font-size: 1.1rem;
+    }
+
+    .list-view .member p {
+        font-size: 0.9rem;
+    }
+
+    .list-view .member a {
+        font-size: 0.9rem;
+        display: block;
+    }
 }

@@ -444,34 +444,66 @@ form button[type="submit"]:hover {
     border: 1px solid #000;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .member {
+}
+
+.grid-view .member {
+    display: inline-block;
+    width: 600; 
+    margin: 10px;
+    border: 1px solid #000;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.list-view .member {
+    border-bottom: 1px solid #000;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-view .member img {
+    display: none;
+}
+
+.list-view .member h2,
+.list-view .member p {
+    margin: 0;
+}
+
+.list-view .member h2,
+.list-view .member p:nth-child(n+2) {
+    flex: 1;
+    text-align: center;
+}
+
+.member {
     border: 1px solid #000;
     padding: 20px 10px;
     margin: 5px;
-  }
+}
   
-  .member img {
+.member img {
     max-width: 100%;
     height: auto;
-  }
+}
   
-  .dark-mode .discovery-container,
-  .dark-mode .member {
+.dark-mode .discovery-container,
+.dark-mode .member {
     background-color: #000;
     color: #fff;
     border-color: #fff;
-  }
+}
   
-  .dark-mode .member h2,
-  .dark-mode .member p {
+.dark-mode .member h2,
+.dark-mode .member p {
     color: #fff;
-  }
+}
   
-  .dark-mode .member a {
-    color: var(--primary-color);
-  }
+.dark-mode .member a {
+    color: #fff;
+}
 
 footer {
     background-color: #26830f;
