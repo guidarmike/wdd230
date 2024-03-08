@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const listViewBtn = document.getElementById('list-view');
     const membersList = document.getElementById('members-list');
   
-    const membersData = fetch('https://guidarmike.github.io/wdd230/data/members.json')
+    const membersData = fetch('https://guidarmike.github.io/wdd230/chamber/data/members.json')
       .then(response => response.json())
       .then(data => {
         displayMembers(data.members);
