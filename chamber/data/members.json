@@ -5,7 +5,7 @@
         "address": "123 Main Street",
         "phone": "555-1234",
         "website": "http://www.companya.com",
-        "image": "companya.jpg",
+        "image": "https://www.oliomarchesi.com/marchesi_2021/wp-content/uploads/2021/05/IMG_1276-1.jpg",
         "membership_level": "Gold",
         "other_info": "Lorem ipsum dolor sit amet"
       },
@@ -32,7 +32,7 @@
       "address": "321 Maple Avenue",
       "phone": "555-1213",
       "website": "http://www.companyd.com",
-      "image": "companyd.jpg",
+      "image": "companyd.jpg", 
       "membership_level": "Silver",
       "other_info": "Ut enim ad minim veniam"
     },
