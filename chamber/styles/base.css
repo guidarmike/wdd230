@@ -448,7 +448,7 @@ form button[type="submit"]:hover {
 
 .grid-view .member {
     display: inline-block;
-    width: 600; 
+    width: 600px; 
     margin: 10px;
     border: 1px solid #000;
     padding: 10px;
