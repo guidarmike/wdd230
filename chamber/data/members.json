@@ -26,6 +26,51 @@
         "image": "companyc.jpg",
         "membership_level": "Bronze",
         "other_info": "Sed do eiusmod tempor incididunt"
+    },
+    {
+      "name": "Company D",
+      "address": "321 Maple Avenue",
+      "phone": "555-1213",
+      "website": "http://www.companyd.com",
+      "image": "companyd.jpg",
+      "membership_level": "Silver",
+      "other_info": "Ut enim ad minim veniam"
+    },
+    {
+      "name": "Company E",
+      "address": "654 Pine Road",
+      "phone": "555-1415",
+      "website": "http://www.companye.com",
+      "image": "companye.jpg",
+      "membership_level": "Gold",
+      "other_info": "Duis aute irure dolor in reprehenderit"
+    },
+    {
+      "name": "Company F",
+      "address": "987 Cedar Lane",
+      "phone": "555-1617",
+      "website": "http://www.companyf.com",
+      "image": "companyf.jpg",
+      "membership_level": "Bronze",
+      "other_info": "Excepteur sint occaecat cupidatat"
+    },
+    {
+      "name": "Company G",
+      "address": "741 Birch Street",
+      "phone": "555-1819",
+      "website": "http://www.companyg.com",
+      "image": "companyg.jpg",
+      "membership_level": "Gold",
+      "other_info": "Sunt in culpa qui officia deserunt"
+    },
+    {
+      "name": "Company H",
+      "address": "963 Walnut Avenue",
+      "phone": "555-2021",
+      "website": "http://www.companyh.com",
+      "image": "companyh.jpg",
+      "membership_level": "Silver",
+      "other_info": "Nisi ut aliquid ex ea commodi"
     }
     ]
 }
