@@ -1,73 +1,73 @@
 {
     "members": [
       {
-        "name": "Company A",
+        "name": "Frantoio Saporito",
         "address": "123 Main Street",
         "phone": "555-1234",
-        "website": "http://www.companya.com",
+        "website": "http://www.saporito&olio.com",
         "image": "company.webp",
         "membership_level": "Gold",
         "other_info": "Lorem ipsum dolor sit amet"
       },
       {
-        "name": "Company B",
+        "name": "Green Olive of Farfa",
         "address": "456 Elm Street",
         "phone": "555-5678",
-        "website": "http://www.companyb.com",
+        "website": "http://www.greenolive.com",
         "image": "company.webp",
         "membership_level": "Silver",
         "other_info": "Consectetur adipiscing elit"
       },
       {
-        "name": "Company C",
+        "name": "Olive Transport Association",
         "address": "789 Oak Street",
         "phone": "555-91011",
-        "website": "http://www.companyc.com",
+        "website": "http://www.olivetrasport.com",
         "image": "company.webp",
         "membership_level": "Bronze",
         "other_info": "Sed do eiusmod tempor incididunt"
     },
     {
-      "name": "Company D",
+      "name": "Toasted Bread and Olive",
       "address": "321 Maple Avenue",
       "phone": "555-1213",
-      "website": "http://www.companyd.com",
+      "website": "http://www.qualityfood.com",
       "image": "company.webp", 
       "membership_level": "Silver",
       "other_info": "Ut enim ad minim veniam"
     },
     {
-      "name": "Company E",
+      "name": "George's Trees",
       "address": "654 Pine Road",
       "phone": "555-1415",
-      "website": "http://www.companye.com",
+      "website": "http://www.georgestrees.com",
       "image": "company.webp",
       "membership_level": "Gold",
       "other_info": "Duis aute irure dolor in reprehenderit"
     },
     {
-      "name": "Company F",
+      "name": "Free Oil Association",
       "address": "987 Cedar Lane",
       "phone": "555-1617",
-      "website": "http://www.companyf.com",
+      "website": "http://www.oliveoil.com",
       "image": "company.webp",
       "membership_level": "Bronze",
       "other_info": "Excepteur sint occaecat cupidatat"
     },
     {
-      "name": "Company G",
+      "name": "Donato's Frantoio",
       "address": "741 Birch Street",
       "phone": "555-1819",
-      "website": "http://www.companyg.com",
+      "website": "http://www.olionostro.com",
       "image": "company.webp",
       "membership_level": "Gold",
       "other_info": "Sunt in culpa qui officia deserunt"
     },
     {
-      "name": "Company H",
+      "name": "anonymous Olive Oil Drinkers",
       "address": "963 Walnut Avenue",
       "phone": "555-2021",
-      "website": "http://www.companyh.com",
+      "website": "http://www.livinghappily.com",
       "image": "company.webp",
       "membership_level": "Silver",
       "other_info": "Nisi ut aliquid ex ea commodi"

@@ -19,12 +19,12 @@ document.addEventListener('DOMContentLoaded', function () {
             memberItem.classList.add('member');
             memberItem.innerHTML = `
                 <h2>${member.name}</h2>
+                <img src="images/${member.image}" alt="${member.name}">
                 <p>Address: ${member.address}</p>
                 <p>Phone: ${member.phone}</p>
                 <p>Website: <a href="${member.website}" target="_blank">${member.website}</a></p>
                 <p>Membership Level: ${member.membership_level}</p>
                 <p>${member.other_info}</p>
-                <img src="images/${member.image}" alt="${member.name}">
             `;
             membersList.appendChild(memberItem);
         });
