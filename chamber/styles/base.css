@@ -202,6 +202,79 @@ main {
     margin: 10px 0;
 }
 
+/* .weather-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.weather-card {
+    display: flex;
+    align-items: center;
+}
+
+.weather-card p {
+    flex: 1;
+}
+
+.weather-card figure {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.weather-card h2 {
+    margin-bottom: 10px;
+}
+
+#forecast-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.forecast-item {
+    flex: 0 0 20%;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.forecast-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+#banner {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#banner p {
+    margin: 0;
+}
+
+#close-button {
+    background-color: #1b600a;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#close-button:hover {
+    background-color: #26830f;
+}
+
 .current-events h2,
 .weather-card h2 {
     margin-right: 0;
@@ -254,22 +327,22 @@ main {
 .sabina-area {
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    justify-content: center; 
-    text-align: center; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     padding-bottom: 10px;
 }
 
 .sabina-area img {
-    max-width: 100%; 
-    height: auto; 
-    transition: transform 0.3s ease; 
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
     transform-origin: left;
 }
 
 .sabina-area img:hover {
-    transform: scale(5); 
-    z-index: 2; 
+    transform: scale(5);
+    z-index: 2;
 }
 
 .images-content {
@@ -336,18 +409,18 @@ main {
 }
 
 .form-header {
-    grid-column: 1 / -1; 
-    text-align: center; 
+    grid-column: 1 / -1;
+    text-align: center;
 }
 
 .form-container {
-    grid-column: 1 / -1; 
+    grid-column: 1 / -1;
     display: flex;
     justify-content: center;
 }
 
 .form-title {
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 form {
@@ -410,18 +483,18 @@ form button[type="submit"]:hover {
 }
 
 .dark-mode .form-container label {
-    color: #000; 
+    color: #000;
 }
 
 .dark-mode .form-header .form-title {
-    color: #fff; 
+    color: #fff;
 }
 
 .form-container,
 .membership-benefits {
     width: 100%;
-    max-width: 500px; 
-    margin: 0 auto; 
+    max-width: 500px;
+    margin: 0 auto;
     box-sizing: border-box;
     padding: 0 15px;
 }
@@ -449,17 +522,17 @@ form button[type="submit"]:hover {
 .toggle-view {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 .toggle-view button {
-    margin: 0 10px; 
+    margin: 0 10px;
 }
 
-.members.grid-view{
+.members.grid-view {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px; 
+    gap: 20px;
 }
 
 .members.list-view .member {
@@ -506,24 +579,24 @@ form button[type="submit"]:hover {
     padding: 20px 10px;
     margin: 5px;
 }
-  
+
 .member img {
     max-width: 100%;
     height: auto;
 }
-  
+
 .dark-mode .discovery-container,
 .dark-mode .member {
     background-color: #000;
     color: #fff;
     border-color: #fff;
 }
-  
+
 .dark-mode .member h2,
 .dark-mode .member p {
     color: #fff;
 }
-  
+
 .dark-mode .member a {
     color: #fff;
 }
