@@ -8,49 +8,36 @@ async function getLinks() {
 }
 
 function displayLinks(weeks) {
-  weeks.forEach((week, index) => {
-    const weekNumber = index + 1;
-    const weekHeading = document.querySelector(`#links-container h3[data-type="activities"]`);
-    const linksParagraphs = document.querySelectorAll(`#links-container p`);
+  const linksContainer = document.getElementById('links-container');
 
-    if (weekHeading) {
-      weekHeading.textContent = `Week ${weekNumber}: Learning Activities`;
-    }
+  const section = document.createElement('section');
+  section.classList.add('card');
 
-    week.links.forEach((link, i) => {
-      const linkIndex = i + 1;
-      if (linksParagraphs[i]) {
-        linksParagraphs[i].innerHTML = `${linkIndex}: <a href="${baseURL}${link.url}">${link.title}</a>`;
+  const h3 = document.createElement('h3');
+  h3.setAttribute('data-type', 'activities');
+  h3.textContent = 'Learning Activities';
+  section.appendChild(h3);
+
+  weeks.forEach(week => {
+    const weekNumber = week.lesson;
+    const p = document.createElement('p');
+    const linksText = [];
+
+    linksText.push(`${weekNumber}: `);
+
+    week.links.forEach((link, index) => {
+      const linkText = `<a href="${link.url}">${link.title}</a>`;
+      if (index > 0) {
+        linksText.push(' | ');
       }
+      linksText.push(linkText);
     });
+
+    p.innerHTML = linksText.join('');
+    section.appendChild(p);
   });
+
+  linksContainer.appendChild(section);
 }
-// function displayLinks(weeks) {
-//   const linksContainer = document.getElementById('links-container');
-
-//   weeks.forEach((week, index) => {
-//     const weekNumber = index + 1;
-//     const weekDiv = document.createElement('div');
-//     weekDiv.classList.add('week');
-
-//     const heading = document.createElement('h2');
-//     heading.textContent = `Week ${weekNumber}`;
-
-//     const linksList = document.createElement('ul');
-
-//     week.links.forEach(link => {
-//       const listItem = document.createElement('li');
-//       const anchor = document.createElement('a');
-//       anchor.href = baseURL + link.url;
-//       anchor.textContent = link.title;
-//       listItem.appendChild(anchor);
-//       linksList.appendChild(listItem);
-//     });
-
-//     weekDiv.appendChild(heading);
-//     weekDiv.appendChild(linksList);
-//     linksContainer.appendChild(weekDiv);
-//   });
-// }
 
 getLinks();
