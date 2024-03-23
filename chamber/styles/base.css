@@ -179,6 +179,7 @@ main {
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
+    margin: 5px;
 }
 
 .join-link:hover {
