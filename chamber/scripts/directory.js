@@ -28,6 +28,8 @@ document.addEventListener('DOMContentLoaded', function () {
             `;
             membersList.appendChild(memberItem);
         });
+
+        membersList.classList.add('grid-view');
     }
 
     gridViewBtn.addEventListener('click', function () {
