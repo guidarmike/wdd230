@@ -7,7 +7,7 @@
         "website": "http://www.saporito&olio.com",
         "image": "company.webp",
         "membership_level": "Gold",
-        "other_info": "Lorem ipsum dolor sit amet"
+        "other_info": "Trusting Oil Farming Company since 2014."
       },
       {
         "name": "Green Olive of Farfa",
@@ -16,7 +16,7 @@
         "website": "http://www.greenolive.com",
         "image": "company.webp",
         "membership_level": "Silver",
-        "other_info": "Consectetur adipiscing elit"
+        "other_info": "Regional Nature Preservation Association."
       },
       {
         "name": "Olive Transport Association",
@@ -25,7 +25,7 @@
         "website": "http://www.olivetrasport.com",
         "image": "company.webp",
         "membership_level": "Bronze",
-        "other_info": "Sed do eiusmod tempor incididunt"
+        "other_info": "Regional Distribution Association for Olive Oli."
     },
     {
       "name": "Toasted Bread and Olive",
@@ -34,7 +34,7 @@
       "website": "http://www.qualityfood.com",
       "image": "company.webp", 
       "membership_level": "Silver",
-      "other_info": "Ut enim ad minim veniam"
+      "other_info": "Culinary school of Sabina."
     },
     {
       "name": "George's Trees",
@@ -43,7 +43,7 @@
       "website": "http://www.georgestrees.com",
       "image": "company.webp",
       "membership_level": "Gold",
-      "other_info": "Duis aute irure dolor in reprehenderit"
+      "other_info": "Private Association of Olive Oil Farming."
     },
     {
       "name": "Free Oil Association",
@@ -52,7 +52,7 @@
       "website": "http://www.oliveoil.com",
       "image": "company.webp",
       "membership_level": "Bronze",
-      "other_info": "Excepteur sint occaecat cupidatat"
+      "other_info": "Public Association of Olive Oil Farming."
     },
     {
       "name": "Donato's Frantoio",
@@ -61,7 +61,7 @@
       "website": "http://www.olionostro.com",
       "image": "company.webp",
       "membership_level": "Gold",
-      "other_info": "Sunt in culpa qui officia deserunt"
+      "other_info": "Trusting Oil Farming Company since 1984."
     },
     {
       "name": "Anonymous Olive Oil Drinkers",
@@ -70,7 +70,7 @@
       "website": "http://www.livinghappily.com",
       "image": "company.webp",
       "membership_level": "Silver",
-      "other_info": "Nisi ut aliquid ex ea commodi"
+      "other_info": "Elderly Association for Cultural activities."
     }
     ]
 }
