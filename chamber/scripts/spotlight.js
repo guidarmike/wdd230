@@ -12,7 +12,7 @@ fetch('https://guidarmike.github.io/wdd230/chamber/data/members.json')
             return array;
         }
 
-        const selectedMembers = shuffleArray(silverGoldMembers).slice(0, Math.floor(Math.random() * 2) + 2);
+        const selectedMembers = shuffleArray(silverGoldMembers).slice(0, 3);
 
         const spotlightsContainer = document.getElementById('company-spotlights');
 
