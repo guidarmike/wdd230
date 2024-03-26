@@ -537,7 +537,10 @@ form button[type="submit"]:hover {
 }
 
 .members.list-view .member {
-    width: 1000px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden; 
+    word-wrap: break-word; 
 }
 
 .members.list-view {

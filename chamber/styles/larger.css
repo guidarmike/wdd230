@@ -36,4 +36,8 @@
         opacity: 0.8;
         transform: scale(1.02);
     }
+
+    .members.list-view .member {
+        width: calc(100% - 20px); 
+    }
 }

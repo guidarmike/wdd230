@@ -98,6 +98,14 @@
         width: 100%;
     }
 
+    .members.grid-view {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .members.list-view .member {
+        width: calc(100% - 10px); 
+    }
+
     .list-view .member {
         display: block;
         padding: 10px;
