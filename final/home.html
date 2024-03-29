@@ -41,11 +41,81 @@
 
     <main>
 
+        <section class="hero">
+            
+            <picture>
+                <source srcset="images/" media="(max-width: 400px)">
+                <source srcset="images/" media="(max-width: 960px)">
+                <img src="images/" alt="">
+            </picture>
+
+            <div class="hero-content">
+                <h2>With Scoots, you won't lose</h2>
+                <p>Rent your vehicle and explore the island for the best price!</p>
+                <a href="reservations.html" class="cta-button">Make a Reservation</a>
+            </div>
+        </section>
+
+        <section class="section-container"></section>
+        <section class="rental-info">
+            <h2>Rental Information</h2>
+            <h3>Types of Rentals</h3>
+            <ul>
+                <li>Honda Motor Scooters
+                    <ul>
+                        <li>Honda Metropolitan (49cc) - 1 person</li>
+                        <li>Honda Dio (110cc) - 2 person</li>
+                        <li>Honda PCX150 (149cc) - 2 person</li>
+                    </ul>
+                </li>
+                <li>Side-by-Side ATVs
+                    <ul>
+                        <li>Honda Pioneer 1000 - 4 person</li>
+                    </ul>
+                </li>
+                <li>Jeeps
+                    <ul>
+                        <li>Jeep Wrangler - 4 door manual with A/C - 5 person</li>
+                        <li>Jeep Wrangler - 2 door - open air - manual - 4 person</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="weather">
+            <h2>Weather Information</h2>
+            <div id="weather-info">
+                <p id="current-temp"></p>
+                <p id="current-humidity"></p>
+                <figure>
+                    <img id="weather-icon" alt="Weather Icon">
+                    <figcaption id="figcaption"></figcaption>
+                </figure>
+                <div id="forecast-container"></div>
+                <div id="banner">
+                    
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer>
-        <a href="attributions.html">Attributions</a>
+        <div class="footer-content">
+            <p>Contact Information</p>
+
+            <a href="attributions.html">Attributions</a>
+            
+            <ul class="social-media">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
     </footer>
+
+    <script src="scripts/weather.js"></script>
+
 </body>
 
 </html>
