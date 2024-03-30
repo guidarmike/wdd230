@@ -22,31 +22,37 @@
     <meta property="og:title" content="WDD230 - Scoots Home Page by Michele Guidara">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://guidarmike.github.io/wdd230/final">
-    <meta property="og:image" content="https://explore-sithonia.com/wp-content/plugins/justified-image-grid/timthumb.php?src=https%3A%2F%2Fexplore-sithonia.com%2Fwp-content%2Fuploads%2Fscooter-rentals%2Fgallery%2Fnikiti-electric-scooters-1024x682.jpg&h=225&w=337&q=72&f=.jpg">
+    <meta property="og:image"
+        content="https://explore-sithonia.com/wp-content/plugins/justified-image-grid/timthumb.php?src=https%3A%2F%2Fexplore-sithonia.com%2Fwp-content%2Fuploads%2Fscooter-rentals%2Fgallery%2Fnikiti-electric-scooters-1024x682.jpg&h=225&w=337&q=72&f=.jpg">
 </head>
 
 <body>
     <header>
+        <div class="logo-wrapper">
+            <img src="images/scoots-logo.webp" class="logo-img" alt="Scoots Logo">
+        </div>
         <h1>Welcome to ~Scoots~</h1>
 
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="rentals.html">Rentals</a></li>
-                <li><a href="reservations.html">Reservations</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div id="hamburger">&#8801;</div>
     </header>
+
+    <nav>
+        <ul class="show-menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
     <main>
 
         <section class="hero">
-            
+
             <picture>
-                <source srcset="images/" media="(max-width: 400px)">
-                <source srcset="images/" media="(max-width: 960px)">
-                <img src="images/" alt="">
+                <source srcset="images/hero-image-small.webp" media="(max-width: 400px)">
+                <source srcset="images/hero-image-medium.webp" media="(max-width: 960px)">
+                <img src="images/hero-image.webp" alt="A Scooter for Rental">
             </picture>
 
             <div class="hero-content">
@@ -93,7 +99,7 @@
                 </figure>
                 <div id="forecast-container"></div>
                 <div id="banner">
-                    
+
                 </div>
             </div>
         </section>
@@ -105,7 +111,7 @@
             <p>Contact Information</p>
 
             <a href="attributions.html">Attributions</a>
-            
+
             <ul class="social-media">
                 <li><a href="#">Facebook</a></li>
                 <li><a href="#">Twitter</a></li>
@@ -115,6 +121,7 @@
     </footer>
 
     <script src="scripts/weather.js"></script>
+    <script src="scripts/hamburgermenu.js"></script>
 
 </body>
 

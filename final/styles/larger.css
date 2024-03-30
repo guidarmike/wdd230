@@ -13,14 +13,29 @@ body {
 }
 
 header {
+    display: flex;
+    align-items: center; 
     background-color: var(--primary-color);
     padding: 10px;
+}
+
+.logo-wrapper {
+    margin-right: 20px; 
+}
+
+#hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 50px;
+    margin-right: 20px;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    background-color: var(--primary-color);
 }
 
 nav ul li {
@@ -41,6 +56,13 @@ nav ul li a:hover {
     background-color: lightblue;
     padding: 50px;
     text-align: center;
+}
+
+.hero img {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
 }
 
 .section-container {
