@@ -87,6 +87,25 @@ nav ul li a:hover {
     align-items: center;
 }
 
+.rental-options {
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #008080;
+    color: white;
+}
 
 footer {
     background-color: var(--primary-color);

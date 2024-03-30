@@ -1,79 +1,78 @@
 {
-    "MaxRentalPricing": {
-      "Vehicles": [
-        {
-          "RentalType": "Honda Metro Scooter",
-          "MaxPersons": 1,
-          "Reservation": {
-            "HalfDay": "$20",
-            "FullDay": "$30"
-          },
-          "WalkIn": {
-            "HalfDay": "$25",
-            "FullDay": "$35"
-          }
+  "MaxRentalPricing": {
+    "Vehicles": [
+      {
+        "RentalType": "Honda Metro Scooter",
+        "MaxPersons": 1,
+        "Reservation": {
+          "HalfDay": "$20",
+          "FullDay": "$30"
         },
-        {
-          "RentalType": "Honda Dio Scooter",
-          "MaxPersons": 2,
-          "Reservation": {
-            "HalfDay": "$30",
-            "FullDay": "$40"
-          },
-          "WalkIn": {
-            "HalfDay": "$35",
-            "FullDay": "$45"
-          }
-        },
-        {
-          "RentalType": "Honda PCX150 Scooter",
-          "MaxPersons": 2,
-          "Reservation": {
-            "HalfDay": "$40",
-            "FullDay": "$50"
-          },
-          "WalkIn": {
-            "HalfDay": "$45",
-            "FullDay": "$55"
-          }
-        },
-        {
-          "RentalType": "Honda Pioneer ATV",
-          "MaxPersons": 4,
-          "Reservation": {
-            "HalfDay": "$50",
-            "FullDay": "$70"
-          },
-          "WalkIn": {
-            "HalfDay": "$60",
-            "FullDay": "$80"
-          }
-        },
-        {
-          "RentalType": "Jeep Wrangler - 4 door with a/c",
-          "MaxPersons": 5,
-          "Reservation": {
-            "HalfDay": "$70",
-            "FullDay": "$100"
-          },
-          "WalkIn": {
-            "HalfDay": "$85",
-            "FullDay": "$125"
-          }
-        },
-        {
-          "RentalType": "Jeep Wrangler - 2 door",
-          "MaxPersons": 4,
-          "Reservation": {
-            "HalfDay": "$60",
-            "FullDay": "$85"
-          },
-          "WalkIn": {
-            "HalfDay": "$70",
-            "FullDay": "$90"
-          }
+        "WalkIn": {
+          "HalfDay": "$25",
+          "FullDay": "$35"
         }
-      ]
-    }
+      },
+      {
+        "RentalType": "Honda Dio Scooter",
+        "MaxPersons": 2,
+        "Reservation": {
+          "HalfDay": "$30",
+          "FullDay": "$40"
+        },
+        "WalkIn": {
+          "HalfDay": "$35",
+          "FullDay": "$45"
+        }
+      },
+      {
+        "RentalType": "Honda PCX150 Scooter",
+        "MaxPersons": 2,
+        "Reservation": {
+          "HalfDay": "$40",
+          "FullDay": "$50"
+        },
+        "WalkIn": {
+          "HalfDay": "$45",
+          "FullDay": "$55"
+        }
+      },
+      {
+        "RentalType": "Honda Pioneer ATV",
+        "MaxPersons": 4,
+        "Reservation": {
+          "HalfDay": "$50",
+          "FullDay": "$70"
+        },
+        "WalkIn": {
+          "HalfDay": "$60",
+          "FullDay": "$80"
+        }
+      },
+      {
+        "RentalType": "Jeep Wrangler - 4 door with a/c",
+        "MaxPersons": 5,
+        "Reservation": {
+          "HalfDay": "$70",
+          "FullDay": "$100"
+        },
+        "WalkIn": {
+          "HalfDay": "$85",
+          "FullDay": "$125"
+        }
+      },
+      {
+        "RentalType": "Jeep Wrangler - 2 door",
+        "MaxPersons": 4,
+        "Reservation": {
+          "HalfDay": "$60",
+          "FullDay": "$85"
+        },
+        "WalkIn": {
+          "HalfDay": "$70",
+          "FullDay": "$90"
+        }
+      }
+    ]
   }
-  
+}

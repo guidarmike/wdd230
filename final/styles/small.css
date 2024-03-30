@@ -18,4 +18,9 @@
         display: block;
         margin-bottom: 10px;
     }
+
+    table th, table td {
+        padding: 4px;
+        font-size: 0.8em; 
+    }
 }
