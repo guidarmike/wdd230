@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,8 +22,10 @@
     <meta property="og:title" content="WDD230 - Scoots Reservations Page by Michele Guidara">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://guidarmike.github.io/wdd230/final">
-    <meta property="og:image" content="https://explore-sithonia.com/wp-content/plugins/justified-image-grid/timthumb.php?src=https%3A%2F%2Fexplore-sithonia.com%2Fwp-content%2Fuploads%2Fscooter-rentals%2Fgallery%2Fnikiti-electric-scooters-1024x682.jpg&h=225&w=337&q=72&f=.jpg">
+    <meta property="og:image"
+        content="https://explore-sithonia.com/wp-content/plugins/justified-image-grid/timthumb.php?src=https%3A%2F%2Fexplore-sithonia.com%2Fwp-content%2Fuploads%2Fscooter-rentals%2Fgallery%2Fnikiti-electric-scooters-1024x682.jpg&h=225&w=337&q=72&f=.jpg">
 </head>
+
 <body>
     <header>
         <div class="logo-wrapper">
@@ -43,7 +46,126 @@
     </nav>
 
     <main>
+        <div class="form-header">
+            <h2 class="form-title">Rental Reservation</h2>
+        </div>
 
+        <div class="form-section">
+            <div class="reservation-form">
+                <form id="reservation-form" action="thankyou.html" method="post">
+                    <div>
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div>
+                        <label for="period">Period:</label>
+                        <select id="period" name="period" required>
+                            <option value="" disabled selected>Select Period</option>
+                            <option value="half-day">Half Day</option>
+                            <option value="full-day">Full Day</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="rental-type">Rental Type:</label>
+                        <select id="rental-type" name="rental-type" required>
+                            <option value="" disabled selected>Select Rental Type</option>
+                            <option value="scooter">Scooter</option>
+                            <option value="atv">ATV</option>
+                            <option value="jeep">Jeep</option>
+                        </select>
+                    </div>
+
+                    <label for="number">Number of Rentals:</label>
+                    <input type="number" id="number" name="number" min="1" required>
+
+                    <label for="phone">Personal Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="country">Home State or Country:</label>
+                    <input type="text" id="country" name="country" required>
+
+                    <label for="cruise-line">Cruise Line (if applicable):</label>
+                    <input type="text" id="cruise-line" name="cruise-line">
+
+                    <label for="accommodations">Special Accommodations/Comments:</label>
+                    <textarea id="accommodations" name="accommodations"></textarea>
+
+                    <div class="hidden-message">
+                        <p>Make sure to read the Rental Agreement before Submitting your Reservation.</p>
+                    </div>
+
+                    <div>
+                        <button type="submit">Submit Reservation</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="rental-agreement">
+                <h3>Rental Agreement Information</h3>
+                
+                <div class="terms-and-conditions">
+                    <h4>Agreement Terms and Conditions:</h4>
+                    <ol>
+                        <li>
+                            <strong>Rental Period:</strong> The rental period begins from the date and time the scooter is collected by the renter and ends when it is returned to the rental service.
+                        </li>
+                        <li>
+                            <strong>Rental Fee:</strong> The rental fee is based on the selected rental period (half-day or full-day) and the type of scooter rented.
+                        </li>
+                        <li>
+                            <strong>Security Deposit:</strong> A security deposit may be required at the discretion of the rental service. This deposit will be refunded upon return of the scooter in the same condition as it was rented.
+                        </li>
+                        <li>
+                            <strong>Responsibilities of the Renter:</strong>
+                            <ul>
+                                <li>The renter is responsible for the safe and lawful operation of the scooter during the rental period.</li>
+                                <li>The scooter should only be used for its intended purpose and in accordance with local traffic laws and regulations.</li>
+                                <li>The renter must notify the rental service immediately in case of any accidents, damage, or mechanical issues with the scooter.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Liability and Insurance:</strong>
+                            <ul>
+                                <li>The rental service is not liable for any injuries, accidents, or damages that occur during the rental period.</li>
+                                <li>The renter is responsible for any damages to the scooter, including repair costs and loss of rental income, resulting from misuse or negligence.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Loss or Theft:</strong> In case of loss or theft of the scooter during the rental period, the renter must report the incident to the rental service and local authorities immediately. The renter may be liable for the replacement cost of the scooter.
+                        </li>
+                        <li>
+                            <strong>Cancellation and Refunds:</strong>
+                            <ul>
+                                <li>Cancellations made within a specified period before the rental start date may be subject to a cancellation fee.</li>
+                                <li>Refunds for cancellations or early returns will be issued at the discretion of the rental service.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Maintenance and Repairs:</strong>
+                            <ul>
+                                <li>The rental service will ensure that the scooter is maintained in good working condition before renting it out.</li>
+                                <li>The renter must report any mechanical issues or maintenance requirements to the rental service promptly.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Additional Terms:</strong> Any additional terms or conditions agreed upon between the renter and the rental service should be documented in writing and included as part of this rental agreement.
+                        </li>
+                    </ol>
+                </div>
+            
+                <div class="acceptance">
+                    <p><strong>Acceptance of Terms:</strong></p>
+                    <p>By submitting the rental reservation, the renter acknowledges that they have read and understood the terms and conditions of this rental agreement and agree to abide by them.</p>
+                </div>
+            </div>
+        </div>
+        
     </main>
 
     <footer>
@@ -61,5 +183,7 @@
     </footer>
 
     <script src="scripts/hamburgermenu.js"></script>
+    <script src="scripts/reservations.js"></script>
 </body>
+
 </html>
