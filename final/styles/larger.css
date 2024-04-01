@@ -244,6 +244,17 @@ form #contact-form {
     border-radius: 8px;
 }
 
+main .form-completition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thank-you-container {
+    text-align: center;
+    padding: 200px 0;
+}
+
 footer {
     background-color: var(--primary-color);
     color: white;
