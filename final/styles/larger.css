@@ -198,6 +198,52 @@ form button[type="submit"]:hover {
     display: none;
 }
 
+.contact-page {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.contact-form,
+.contact-info {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+textarea#comment {
+    width: calc(100% - 18px);
+    height: 100px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: inherit;
+    resize: none;
+}
+
+.map {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+}
+
+form #contact-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.map iframe {
+    width: calc(50% - 10px);
+    height: 300px;
+    border: none;
+    border-radius: 8px;
+}
+
 footer {
     background-color: var(--primary-color);
     color: white;
