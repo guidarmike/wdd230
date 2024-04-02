@@ -52,6 +52,29 @@ nav ul li a:hover {
     color: var(--primary-color-hover);
 }
 
+.logo-img,
+.hero-img,
+.location {
+    animation: fadeIn 5s ease-in-out;
+}
+
+.logo-img:hover,
+.hero-img:hover,
+.location:hover {
+    opacity: 0.8;
+    transform: scale(1.02);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .hero {
     background-color: lightblue;
     padding: 50px;
