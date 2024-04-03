@@ -78,7 +78,7 @@ async function displayForecast(data) {
 
 async function displayHighTemperatureMessage(data) {
     const maxTemperatureToday = Math.round(data.main.temp_max);
-    banner.innerHTML = `Today's Maximum Temperature: ${maxTemperatureToday}°C <button id="close-button">Close</button>`;
+    banner.innerHTML = `Today's Maximum Temperature: ${maxTemperatureToday}°C <button id="close-button">❌</button>`;
     
     const closeButton = document.querySelector('#close-button');
     closeButton.addEventListener('click', () => {
