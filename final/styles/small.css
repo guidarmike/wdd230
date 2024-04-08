@@ -58,4 +58,17 @@
         height: 200px;
         margin-bottom: 20px;
     }
+
+    .attributions {
+        padding-right: 0;
+    }
+
+    .social-media li {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .social-media a {
+        padding-right: 0;
+    }
 }
